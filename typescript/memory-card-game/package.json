@@ -1,0 +1,33 @@
+{
+  "name": "memory-card-game-mcp",
+  "version": "1.0.0",
+  "description": "OpenAI Apps SDK - Interactive Memory Card Matching Game",
+  "main": "dist/server/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "start:http": "MCP_TRANSPORT=http PORT=3003 node dist/server/index.js",
+    "dev": "tsx watch server/index.ts",
+    "dev:http": "MCP_TRANSPORT=http PORT=3003 tsx watch server/index.ts"
+  },
+  "keywords": [
+    "openai",
+    "apps-sdk",
+    "mcp",
+    "game",
+    "memory"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "express": "^5.1.0",
+    "nanoid": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

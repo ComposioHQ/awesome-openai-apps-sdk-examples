@@ -1,0 +1,36 @@
+{
+  "name": "pomodoro-timer-mcp",
+  "version": "1.0.0",
+  "description": "OpenAI Apps SDK - Pomodoro Timer with task tracking and statistics",
+  "main": "dist/server/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "start:http": "MCP_TRANSPORT=http PORT=3002 node dist/server/index.js",
+    "dev": "tsx watch server/index.ts",
+    "dev:http": "MCP_TRANSPORT=http PORT=3002 tsx watch server/index.ts",
+    "clean": "rm -rf dist data",
+    "test": "echo \"Test by running the server and connecting via ChatGPT Developer Mode\""
+  },
+  "keywords": [
+    "openai",
+    "apps-sdk",
+    "mcp",
+    "pomodoro",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "express": "^5.1.0",
+    "nanoid": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
